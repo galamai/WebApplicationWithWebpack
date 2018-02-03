@@ -1,0 +1,14 @@
+{
+  "name": "webapplicationwithwebpack",
+  "version": "1.0.0",
+  "scripts": {
+    "build:dev": "npm run build:webpack",
+    "build:prod": "npm run clean && npm run build:webpack -- --env.prod",
+    "build:webpack": "webpack --progress --color",
+    "clean": "rimraf Client/dist"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^3.10.0"
+  }
+}
